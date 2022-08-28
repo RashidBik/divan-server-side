@@ -25,7 +25,7 @@ app.use("/likes", likesRouter);
 
 
 db.sequelize.sync().then(() => {
-    app.listen(8000,'192.168.0.116', () => {
+    app.listen(8000, () => {
         console.log("Server running on port 8000");
     });
 });
